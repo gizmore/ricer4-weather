@@ -1,0 +1,11 @@
+en:
+  ricer4:
+    plugins:
+      weather:
+        
+        weather:
+          trigger: 'weather'
+          description: 'Get the temperature of a city or area, using openweathermap.org.'
+          err_connect: 'The connection to openweathermap.org failed: %{reason}'
+          err_location: 'There could be no information found for your input.'
+          msg_openweather: 'The temperature is around %{temp_avg}°C in %{city}, %{country}. The minimum temperature is %{temp_min}°C while the max temperature is %{temp_max}°C.'
