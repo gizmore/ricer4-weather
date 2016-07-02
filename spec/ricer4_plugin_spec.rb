@@ -11,7 +11,7 @@ describe Ricer4::Plugins::Weather do
   ActiveRecord::Magic::Update.run
 
   it("can fetch weather data") do
-    expect(bot.exec_line("weather 31224")).to start_with("The temperature")
+    expect(bot.exec_line_for("Weather/Weather", "31224")).to start_with("msg_openweather:{\"city\":")
   end
-  
+    
 end
